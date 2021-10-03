@@ -8,17 +8,37 @@
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.first-group
+{
+    margin: 1em;
+    width: 30em;
+    padding: 0.3em;
+   
+
+}
+h3{
+    font-size: 2.6em;
+}
+    </style>
 </head>
 <body>
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 m-auto">
-              <h3 class="text-cente mb-3">
+              <h3 class="text-cente mb-3" style="margin-left:0.5em ;">
                   <i class="fas fa-flag-usa"></i>
                   State Capital 
               </h3>  
-              <div class="form-group">
+              <div class="form-group first-group">
                 <input
                  type="text"
                  id="search" 
@@ -27,6 +47,7 @@
                  placeholder="Enter State name or Abbrevation"
                  />
               </div>
+              <div class="first-group">
 <div class ="form-group1">
     <input type="number" id="quantity"  
            class="form-control form-control-lg" 
@@ -34,7 +55,7 @@
                  name="stateno"
            />
   </div>
-                <div class ="form-group2">
+                <div class ="form-group2 " style="margin: 1.6em 0;padding: 0em;">
     <input type="email" id="email" name="email" 
            class="form-control form-control-lg" 
                  placeholder="Enter State " 
@@ -42,12 +63,12 @@
            />
                              
   </div>
-             
-             <h2 class="text-cente mb-3">
+</div>   
+             <h3 class="text-cente mb-3 " style="margin-left:0.5em ;">
                   <i class="fas fa-flag-usa"></i>
                   State Capital description
-              </h2>  
-              <div class="form-groupp">
+              </h3>  
+              <div class="form-groupp first-group">
                 <input
                  type="text"
                  id="search" 
@@ -56,33 +77,20 @@
                        name="desciption"
                        />
               </div>
-<div class ="form-groupp1">
+<div class ="form-groupp1 first-group">
     <input type="number" id="quantity"  
            class="form-control form-control-lg" 
                  placeholder="Enter State id" />
   </div>
-                <div class ="form-groupp2">
+                <div class ="form-groupp2 first-group">
     <input type="email" id="email" name="email" 
            class="form-control form-control-lg" 
                  placeholder="Enter State capital email " />
                              
-  </div>    
-                
-   
-                
-                
-                
-                
-                
-              <div id="match-list"></div>
+  </div>       <div id="match-list"></div>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
----
-master
-=======
-<!-- Creating first branch -->
------ master
