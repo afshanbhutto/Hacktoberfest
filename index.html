@@ -72,7 +72,38 @@
         </div>
     </div>
     <script src="script.js"></script>
+    
+    <?php
+       include "connectivity.php";
+    
+        if(isset($_POST['submit'])){
+     
+            $fullname = $_POST['name'];
+            $rollNumber = $_POST['rollNumber'];
+            $section= $_POST['section'];
+            
+            
+            $insert = mysqli_query($db,"INSERT INTO student_information (std_name, std_roll_number ,std_section) VALUES ('$fullname','$rollNumber','$section')");
+
+            if(!$insert){
+                echo mysqli_error();
+            }else{
+                echo "Records added successfully.";
+            }
+        }
+       mysqli_close($db); // Close connection
+    ?>
+
+    <script src="js/Task_1.js"></script>
 </body>
+
+</html>
+
+    
+    
+    
+</body>
+    
 </html>
 ---
 master
